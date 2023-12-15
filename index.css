@@ -1,0 +1,99 @@
+/* Font */
+@font-face {
+  font-family: 'Marhey';
+  src: url(static/Marhey-Regular.ttf) format('truetype');
+}
+
+/* Keyframes */
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Body */
+body {
+  background: linear-gradient(25deg,#d7a4c3,#e7b9cc,#f1d9d5,#f9f9de) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Marhey', sans-serif;
+}
+
+h1{
+  color:#703742;
+}
+
+/* Table Cells */
+td {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #703742;
+  table-layout: fixed;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+/* Hidden Table Buttons */
+table {
+  display: none;
+  margin-top: 20px;
+}
+
+button{
+  background-color: #b55a6a;
+  border: 5px solid white;
+  color: white;
+  border-radius: 100px;
+}
+
+/* Play Buttons */
+.playButton {
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+  margin: 20px;
+  font-family: 'Marhey', sans-serif;
+}
+
+/* Buttons Container */
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Back Button */
+#backBtn {
+  display: none;
+  width: 370px;
+  height: 100px;
+  font-size: 40px;
+  font-family: 'Marhey', sans-serif;
+  margin: 20px;
+}
+
+/* Image */
+.image {
+  margin: auto;
+  width: 70px;
+}
+
+/* Text Elements */
+.welcome_text {
+  text-align: center;
+  font-size: 30px;
+  animation: blink 1s infinite; /* Made the animation continuous */
+}
+
+/* Additional Styling */
+#secondTxt {
+  display: none;
+}
+
+#thirdBtn {
+  width: 260px;
+}
